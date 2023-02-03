@@ -44,7 +44,7 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 15px;
   max-width: 1200px;
 }
 
@@ -78,4 +78,64 @@ img {
 
 .error {
   border: 2px var(--error-color) solid;
+}
+
+.chat__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 320px;
+  min-height: 530px;
+  width: 100%;
+  gap: 8px;
+}
+
+.chat__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.chat__dialogue {
+  width: 100%;
+  min-height: 100%;
+  flex-grow: 1;
+  border: 1px solid var(--dark-color);
+  padding: 8px;
+}
+
+.chat__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.chat__link {
+  padding: 6px 8px;
+  border: 1px solid var(--dark-color);
+}
+
+.chat__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+}
+
+.chat__input {
+  padding: 6px 8px;
+  border: 1px solid var(--dark-color);
+  line-height: 16px;
+}
+
+.chat__message {
+  flex-grow: 1;
+}
+
+.chat__send {
+  background-color: transparent;
 }

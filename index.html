@@ -10,7 +10,29 @@
   </head>
   <body>
     <div class="site-container">
-      <main class="main"></main>
+      <main class="main">
+        <div class="chat">
+          <div class="chat__container container">
+            <div class="chat__wrap">
+              <div class="chat__menu">
+                <a href="#" class="chat__link chat__settings link-reset"
+                  >Настройки</a
+                >
+                <a href="#" class="chat__link chat__exit link-reset">Выйти</a>
+              </div>
+              <div class="chat__dialogue dialogue"></div>
+              <form class="chat__form" action="#">
+                <input
+                  class="chat__input chat__message"
+                  type="text"
+                  placeholder="Сообщение..."
+                />
+                <input class="chat__input chat__send" type="submit" value="&#10149;" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
