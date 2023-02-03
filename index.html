@@ -30,15 +30,17 @@
 									<time class="message__time">19:13</time>
 								</div>
 
-								<div class="dialogue__message dialogue__message--interlocutor message">
+								<div
+									class="dialogue__message dialogue__message--interlocutor message"
+								>
 									<span class="message__sender">Собеседник:</span>
-									<p class="message__text">
-										Пошёл нахуй, козёл!
-									</p>
+									<p class="message__text">Пошёл нахуй, козёл!</p>
 									<time class="message__time">19:14</time>
 								</div>
 
-								<div class="dialogue__message dialogue__message--my message message--delivered">
+								<div
+									class="dialogue__message dialogue__message--my message message--delivered"
+								>
 									<span class="message__sender">Я:</span>
 									<p class="message__text">А это первое!</p>
 									<time class="message__time">19:15</time>
@@ -61,5 +63,29 @@
 				</div>
 			</main>
 		</div>
+		<div class="modal" id="settings">
+			<div class="modal__wrap">
+				<div class="modal__header">
+					<span class="modal__title">Настройки</span>
+					<button class="modal__close btn-reset">&#9587;</button>
+				</div>
+				<div class="modal__body">
+					<span class="modal__text">Имя в чате:</span>
+					<form class="chat__form" action="#">
+						<input
+							class="chat__input chat__message"
+							type="text"
+							placeholder="Сообщение..."
+						/>
+						<input
+							class="chat__input chat__send"
+							type="submit"
+							value="&#10149;"
+						/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
 	</body>
 </html>

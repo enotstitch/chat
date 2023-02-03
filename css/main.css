@@ -194,7 +194,8 @@ img {
 .chat__input {
 	padding: 6px 8px;
 	border: 1px solid var(--dark-color);
-	line-height: 16px;
+	line-height: 19px;
+	background-color: transparent;
 }
 
 .chat__message {
@@ -202,6 +203,43 @@ img {
 }
 
 .chat__send {
-	background-color: transparent;
 	cursor: pointer;
+}
+
+.modal {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000c4;
+}
+
+.modal__wrap {
+  visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-height: 320px;
+	max-width: 270px;
+	padding: 16px 14px;
+	background-color: var(--background-color);
+}
+
+.open {
+  visibility: visible;
+}
+
+.modal__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 70px;
+}
+
+.modal__text {
+	display: inline-block;
+	margin-bottom: 8px;
 }
