@@ -70,16 +70,25 @@ menuOpenBtn.addEventListener('click', openMenu);
 
 // !
 
-function login() {
+async function getCode() {
   const url = 'https://edu.strada.one/api/user';
   let user = { email: 'kessler.anna96@gmail.com' };
 
-  fetch(url, {
+  let response = await fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
     },
     body: JSON.stringify(user),
   });
+
+  let result = await response.json();
+  console.log(result);
 }
 
+let btnCode = document.querySelector('.chat__send--code');
+
+btnCode.addEventListener('click', (event) => {
+  event.preventDefault();
+  getCode();
+});
