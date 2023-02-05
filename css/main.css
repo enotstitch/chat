@@ -240,7 +240,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   gap: 8px;
   bottom: 8px;
   width: 95%;
