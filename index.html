@@ -61,52 +61,52 @@
       </main>
     </div>
 
-    <div class="modal open" id="login">
-      <div class="modal__wrap open">
-        <div class="modal__header">
-          <span class="modal__title">Авторизация</span>
-        </div>
-        <div class="modal__body">
-          <span class="modal__text">Почта:</span>
-          <form class="chat__form modal__form modal__form--login" action="#">
-            <input class="chat__input chat__message" type="text" />
-            <input
-              class="chat__input chat__send chat__send--login chat__send--code"
-              type="submit"
-              value="Получить код"
-            />
-            <input
-              class="chat__input chat__send chat__send--login"
-              type="submit"
-              value="Ввести код"
-            />
-          </form>
-        </div>
-      </div>
-    </div>
+		<div class="modal open" id="login">
+			<div class="modal__wrap open">
+				<div class="modal__header">
+					<span class="modal__title">Авторизация</span>
+				</div>
+				<div class="modal__body">
+					<span class="modal__text">Почта:</span>
+					<form class="chat__form modal__form modal__form--login" action="#">
+						<input class="chat__input chat__message modal__email" type="text" />
+						<input
+							class="chat__input chat__send chat__send--login chat__send--code"
+							type="submit"
+							value="Получить код"
+						/>
+						<input
+							class="chat__input chat__send chat__send--login chat__send--enter"
+							type="submit"
+							value="Ввести код"
+						/>
+					</form>
+				</div>
+			</div>
+		</div>
 
-    <div class="modal" id="confirmation">
-      <div class="modal__wrap">
-        <div class="modal__header">
-          <span class="modal__title">Подтверждение</span>
-          <button class="modal__close btn-reset">&#9587;</button>
-        </div>
-        <div class="modal__body">
-          <span class="modal__text">Код:</span>
-          <form
-            class="chat__form modal__form modal__form--confirmation"
-            action="#"
-          >
-            <input class="chat__input chat__message" type="text" />
-            <input
-              class="chat__input chat__send chat__send--confirmation"
-              type="submit"
-              value="Вход"
-            />
-          </form>
-        </div>
-      </div>
-    </div>
+		<div class="modal" id="confirmation">
+			<div class="modal__wrap">
+				<div class="modal__header">
+					<span class="modal__title">Подтверждение</span>
+					<button class="modal__close btn-reset">&#9587;</button>
+				</div>
+				<div class="modal__body">
+					<span class="modal__text">Код:</span>
+					<form
+						class="chat__form modal__form modal__form--confirmation"
+						action="#"
+					>
+						<input class="chat__input chat__message chat__send--enter-code" type="text" />
+						<input
+							class="chat__input chat__send chat__send--confirmation chat__send--authorization"
+							type="submit"
+							value="Вход"
+						/>
+					</form>
+				</div>
+			</div>
+		</div>
 
     <div class="modal" id="settings">
       <div class="modal__wrap">
@@ -124,11 +124,11 @@
       </div>
     </div>
 
-    <template id="myMessage">
-      <span class="message__sender">Я:</span>
-      <p class="message__text"></p>
-      <time class="message__time">19:13</time>
-    </template>
-    <script src="js/main.js"></script>
-  </body>
+		<template id="myMessage">
+			<span class="message__sender">Я:</span>
+			<p class="message__text"></p>
+			<time class="message__time">19:13</time>
+		</template>
+		<script src="js/main.js" type="module"></script>
+	</body>
 </html>
