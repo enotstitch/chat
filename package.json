@@ -9,6 +9,7 @@
   "author": "enotstitch",
   "license": "ISC",
   "devDependencies": {
+    "js-cookie": "^3.0.1",
     "parcel": "^2.8.3"
   }
 }
